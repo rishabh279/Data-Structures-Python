@@ -37,6 +37,17 @@ def create_static_tree():
     return root
 
 
+def create_static_bst():
+    """ Create static binary search tree. """
+    root = Node(32)
+    root.left = Node(16)
+    root.right = Node(40)
+    root.left.left = Node(14)
+    root.left.right = Node(24)
+    root.right.left = Node(37)
+    root.right.right = Node(51)
+    return root
+
 def pre_order_traversal(root):
     """ Traversing tree in pre-order traversal. """
     print(root.data)
