@@ -31,7 +31,11 @@ def create_static_tree():
     root.left = Node(2)
     root.right = Node(3)
     root.left.left = Node(4)
+    root.left.left.left = Node(8)
+    root.left.left.right = Node(9)
     root.left.right = Node(5)
+    root.left.right.left = Node(10)
+    root.left.right.right = Node(11)
     root.right.left = Node(6)
     root.right.right = Node(7)
     return root
@@ -47,6 +51,7 @@ def create_static_bst():
     root.right.left = Node(37)
     root.right.right = Node(51)
     return root
+
 
 def pre_order_traversal(root):
     """ Traversing tree in pre-order traversal. """
