@@ -1,4 +1,4 @@
-from trees.utils import create_static_tree, Node
+from trees.utils import create_static_tree
 
 
 class LLnode:
