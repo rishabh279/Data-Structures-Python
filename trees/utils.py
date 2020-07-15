@@ -65,5 +65,12 @@ def pre_order_traversal(root):
         pre_order_traversal(root.right)
 
 
+def in_order_traversal(root):
+    """ Traversing tree in in-order traversal. """
+    if root is None:
+        return
+    in_order_traversal(root.left)
+    print(root.data)
+    in_order_traversal(root.right)
 # if __name__ == '__main__':
 #     pre_order_traversal(create_static_tree())
