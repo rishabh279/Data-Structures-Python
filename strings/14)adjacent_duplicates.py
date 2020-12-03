@@ -3,7 +3,6 @@ def remove_adjacent_duplicates(string):
     stack = []
 
     for j in range(len(string)):
-        print(j)
         if j == 0:
             stack.append(string[j])
         elif stack and stack[-1] == string[j]:
