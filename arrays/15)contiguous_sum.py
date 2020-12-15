@@ -3,7 +3,7 @@ from collections import deque
 
 def max_array(arr, n, k):
     """
-    Given an array and an integer 'k', find the maximum, for each and every contiguous subarray of size 'k'
+    Given an array and an integer 'k', find the maximum element, for each and every contiguous subarray of size 'k'
     """
 
     q = deque()

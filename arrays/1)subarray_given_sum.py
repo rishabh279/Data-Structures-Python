@@ -1,8 +1,7 @@
-#Given an unsorted array of nonnegative integers, find a continuous subarray which adds to a given number
-
-
 def subarray_sum_first_approach(arr, sum):
-
+    """
+    Given an unsorted array of nonnegative integers, find a continuous subarray which adds to a given number
+    """
     for i in range(len(arr)):
         temp_arr = []
         curr_sum = arr[i]
