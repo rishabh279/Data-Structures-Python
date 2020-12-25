@@ -1,6 +1,6 @@
 def zero_closest(arr):
     """
-    Given_an_array_A__find_two_element_whose_sum_is_two_elements_whose_sum_is_closest_to_zero
+    Given_an_array_A__find_two_element_whose_sum_is_is_closest_to_zero
     """
     left = 0
     right = len(arr) - 1
