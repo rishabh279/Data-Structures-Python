@@ -27,3 +27,4 @@ if __name__ == '__main__':
     ll.push(40)
     ll.push(50)
     reverse(ll)
+

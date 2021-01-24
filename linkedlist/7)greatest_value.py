@@ -1,6 +1,7 @@
 class Node:
     def __init__(self, data):
         self.data = data
+        self.arbitary = None
         self.next = None
 
 
@@ -26,7 +27,6 @@ class LinkedList(object):
             print(current.data)
             current = current.next
 
-
     def reverse(self):
         """ Reverse Linked List. """
         current = self.head
@@ -39,12 +39,37 @@ class LinkedList(object):
             current = next
 
         self.head = prev
-        temp = self.head
 
-# if __name__ == '__main__':
-#     ll = LinkedList()
-#     ll.push(10)
-#     ll.push(20)
-#     ll.push(30)
-#     ll.push(40)
-#     ll.iterate()
+
+def greatest_value(node):
+    """ Greatest value node in linked list on its right side """
+    max_elem = node.head.data
+    max_node = node.head
+    temp = node.head.next
+
+    while temp:
+        temp.arbitary = max_node
+        if temp.data > max_elem:
+            max_elem = temp.data
+            max_node = temp
+        temp = temp.next
+
+    node.reverse()
+
+    temp = node.head
+    while temp:
+        print(f'Element is {temp.data}')
+        if temp.arbitary:
+            print(f'Max is {temp.arbitary.data}')
+        temp = temp.next
+
+
+if __name__ == '__main__':
+    ll = LinkedList()
+    ll.push(5)
+    ll.push(3)
+    ll.push(10)
+    ll.push(1)
+    ll.reverse()
+    greatest_value(ll)
+    ll.reverse()
