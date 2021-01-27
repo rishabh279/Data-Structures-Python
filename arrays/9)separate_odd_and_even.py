@@ -1,5 +1,5 @@
 def separate_odd_and_even(arr):
-    """ Segregate odd and even nos in an array. """
+    """ Segregate odd and even no                                                                                   s in an array. """
     n = len(arr)
     left = 0
     right = n-1
